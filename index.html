@@ -34,7 +34,7 @@
 
         .container {
             width: 100%;
-            max-width: 680px;
+            max-width: 720px;
             padding: 2.5rem 1.5rem;
             box-sizing: border-box;
         }
@@ -87,17 +87,42 @@
             font-weight: 500;
         }
 
+        .bio {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
         .math-symbol {
             font-family: "Times New Roman", Times, Georgia, serif;
             font-style: italic;
             font-weight: 500;
         }
 
-        .bio {
-            font-size: 1rem;
+        /* Philosophy Banner / Another New 3 */
+        .philosophy-banner {
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 16px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .philosophy-banner h4 {
+            margin: 0 0 0.4rem 0;
+            color: var(--accent-green);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .philosophy-banner p {
+            margin: 0;
+            font-size: 0.9rem;
             color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 2rem;
+            line-height: 1.5;
         }
 
         /* High Voltage LinkedIn Button */
@@ -117,6 +142,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 20px rgba(10, 102, 194, 0.4);
             box-sizing: border-box;
+            margin-top: 1.5rem;
         }
 
         .btn-linkedin:hover {
@@ -162,12 +188,14 @@
             margin: 0;
             font-size: 0.85rem;
             color: var(--text-secondary);
+            line-height: 1.4;
         }
 
         .arrow {
             color: var(--accent-green);
             font-weight: bold;
             font-size: 1.2rem;
+            margin-left: 0.5rem;
         }
 
         /* Tooltip Footer Styling */
@@ -200,12 +228,18 @@
             <h1>Humayun Rashid (হুমায়ূন রশীদ)</h1>
             <div class="role-badge">Research Fellow | Systems Architect</div>
             
-           <p class="bio">
-               Architecting software-defined eco-friendly mobile networks, kernel-level interface steering, and zero-GPS proximity sensing (<span class="math-symbol">P<sub>i</sub></span>) to optimize device energy and hardware longevity.
-           </p>
+            <p class="bio">
+                Architecting software-defined eco-friendly mobile networks, kernel-level interface steering, and zero-GPS proximity sensing (<span class="math-symbol">P<sub>i</sub></span>) to optimize device energy and hardware longevity.
+            </p>
+
+            <!-- Another New 3 / Architectural Philosophy Banner -->
+            <div class="philosophy-banner">
+                <h4>Three Ideas. One Research Direction.</h4>
+                <p>Bridging sustainable systems via <b>01 / Proximity</b>, <b>02 / Networking</b>, and <b>03 / Memory</b> optimization[cite: 5] — positioning our work right between macro-corporate syndicates and minimalist macro-zero goals.</p>
+            </div>
 
             <!-- Magnetic LinkedIn Redirect -->
-            <a href="https://www.linkedin.com/in/humayunrashidbd" class="btn-linkedin" target="_blank">
+            <a href="https://www.linkedin.com/in/HumayunRashidBD" class="btn-linkedin" target="_blank">
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.72a1.47 1.47 0 0 0-1.47 1.47 1.47 1.47 0 0 0 1.47 1.47 1.47 1.47 0 0 0 1.47-1.47 1.47 1.47 0 0 0-1.47-1.47Z"/>
                 </svg>
@@ -215,6 +249,7 @@
 
         <!-- Smart Direct Portals -->
         <div class="grid-links">
+            <!-- Position 1 -->
             <a href="https://zenodo.org/records/23114734" class="card-link" target="_blank">
                 <div class="card-info">
                     <h3>GreenNet-Mobile Research</h3>
@@ -223,18 +258,20 @@
                 <span class="arrow">↗</span>
             </a>
 
-            <a href="https://greennet.reachnbiz.com" class="card-link" target="_blank">
+            <!-- Position 2: GitHub Repository with GreenNet Overview -->
+            <a href="https://github.com/HumayunRashidBD/GreenNet-Mobile" class="card-link" target="_blank">
                 <div class="card-info">
-                    <h3>Live Telemetry Portal</h3>
-                    <p>Real-Time Proximity Indexing & Energy Audit Engine</p>
+                    <h3>GitHub Repository & System Overview</h3>
+                    <p>C++ Native Core, Android MVVM Architecture, Socket Steering & Memory Optimization Engine</p>
                 </div>
                 <span class="arrow">↗</span>
             </a>
 
-            <a href="https://github.com/HumayunRashidBD/GreenNet-Mobile" class="card-link" target="_blank">
+            <!-- Position 3: Updated Telemetry Link -->
+            <a href="https://greennet.reachnbiz.com/telemetry/index.html" class="card-link" target="_blank">
                 <div class="card-info">
-                    <h3>GitHub Repository</h3>
-                    <p>C++ Native Core, Android MVVM & System Architecture</p>
+                    <h3>Live Telemetry Portal</h3>
+                    <p>Real-Time Proximity Indexing & Energy Audit Engine</p>
                 </div>
                 <span class="arrow">↗</span>
             </a>
