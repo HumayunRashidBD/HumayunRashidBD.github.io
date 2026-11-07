@@ -1,9 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humayun Rashid (হুমায়ূন রশীদ) | Academic & Systems Architect</title>
+
+    <meta name="description" content="Humayun Rashid — Independent Researcher and Systems Architect exploring sustainable computing, energy-efficient mobile networks, and Zero-GPS Proximity Indexing (Pi) through GreenNet-Mobile.">
+
+    <meta name="author" content="Humayun Rashid">
+
+    <meta name="theme-color" content="#030712">
+
+    <title>Humayun Rashid (হুমায়ূন রশীদ) | Independent Researcher & Systems Architect</title>
+
     <style>
         :root {
             --bg: #030712;
@@ -16,8 +25,13 @@
             --linkedin-blue: #0a66c2;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont,
+                "SF Pro Display", "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg);
             color: var(--text-primary);
             margin: 0;
@@ -26,9 +40,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: 
-                radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15), transparent 50%),
-                radial-gradient(circle at 80% 100%, rgba(2, 132, 199, 0.1), transparent 50%);
+            background-image:
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(16, 185, 129, 0.15),
+                    transparent 50%
+                ),
+                radial-gradient(
+                    circle at 80% 100%,
+                    rgba(2, 132, 199, 0.1),
+                    transparent 50%
+                );
             background-attachment: fixed;
         }
 
@@ -36,10 +58,10 @@
             width: 100%;
             max-width: 720px;
             padding: 2.5rem 1.5rem;
-            box-sizing: border-box;
         }
 
         /* Profile Card */
+
         .profile-card {
             background: var(--card-bg);
             backdrop-filter: blur(16px);
@@ -71,7 +93,7 @@
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: -0.02em;
-            margin: 0 0 0.4rem 0;
+            margin: 0 0 0.8rem 0;
             color: #ffffff;
         }
 
@@ -81,23 +103,64 @@
             color: var(--accent-green);
             background: rgba(16, 185, 129, 0.1);
             border: 1px solid rgba(16, 185, 129, 0.2);
-            padding: 0.3rem 0.8rem;
+            padding: 0.4rem 0.9rem;
             border-radius: 99px;
             margin-bottom: 1.2rem;
+            font-weight: 600;
+        }
+
+        .discipline {
+            font-size: 1.05rem;
+            color: #e5e7eb;
             font-weight: 500;
+            line-height: 1.5;
+            margin: 0 0 1rem 0;
         }
 
         .bio {
-            font-size: 1rem;
+            font-size: 0.98rem;
             color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            margin: 0 0 1.5rem 0;
         }
 
-        /* Philosophy Banner / Another New 3 */
-        .philosophy-banner {
+        /* Signature Research Banner */
+
+        .research-banner {
             background: rgba(16, 185, 129, 0.05);
             border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 16px;
+            padding: 1.4rem 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .research-banner h4 {
+            margin: 0 0 0.7rem 0;
+            color: var(--accent-green);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .research-banner p {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        .math-symbol {
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        /* Research Pillars */
+
+        .philosophy-banner {
+            background: rgba(2, 132, 199, 0.05);
+            border: 1px solid rgba(2, 132, 199, 0.2);
             border-radius: 16px;
             padding: 1.25rem 1.5rem;
             margin-bottom: 1.5rem;
@@ -105,21 +168,22 @@
         }
 
         .philosophy-banner h4 {
-            margin: 0 0 0.4rem 0;
-            color: var(--accent-green);
-            font-size: 0.95rem;
+            margin: 0 0 0.6rem 0;
+            color: var(--accent-blue);
+            font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.06em;
         }
 
         .philosophy-banner p {
             margin: 0;
             font-size: 0.9rem;
             color: var(--text-secondary);
-            line-height: 1.5;
+            line-height: 1.8;
         }
 
         /* LinkedIn Button */
+
         .btn-linkedin {
             display: flex;
             align-items: center;
@@ -135,7 +199,6 @@
             border-radius: 14px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 20px rgba(10, 102, 194, 0.4);
-            box-sizing: border-box;
             margin-top: 1rem;
         }
 
@@ -146,6 +209,7 @@
         }
 
         /* Content Hub Grid */
+
         .grid-links {
             display: flex;
             flex-direction: column;
@@ -164,6 +228,7 @@
             align-items: center;
             transition: all 0.25s ease;
             backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
 
         .card-link:hover {
@@ -182,7 +247,7 @@
             margin: 0;
             font-size: 0.85rem;
             color: var(--text-secondary);
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .arrow {
@@ -192,92 +257,233 @@
             margin-left: 0.5rem;
         }
 
-        /* Tooltip Footer Styling */
+        /* Footer */
+
         footer {
             text-align: center;
             margin-top: 2rem;
             font-size: 0.8rem;
-            color: #4b5563;
-            line-height: 1.5;
+            color: #6b7280;
+            line-height: 1.7;
         }
 
-        .tooltip-name {
+        .footer-name {
             color: #9ca3af;
-            text-decoration: underline dotted;
-            cursor: help;
+            font-weight: 500;
         }
 
         @media (max-width: 480px) {
-            .container { padding: 1.5rem 1rem; }
-            h1 { font-size: 1.5rem; }
+            .container {
+                padding: 1.5rem 1rem;
+            }
+
+            .profile-card {
+                padding: 2rem 1.25rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .discipline {
+                font-size: 0.95rem;
+            }
+
+            .research-banner,
+            .philosophy-banner {
+                padding: 1.15rem 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <!-- Profile Header -->
-        <div class="profile-card">
-            <div class="avatar">HR</div>
-            <h1>Humayun Rashid (হুমায়ূন রশীদ)</h1>
-            <div class="role-badge">Research Fellow | Systems Architect</div>
-            
-            <p class="bio">
-                <p class="bio">
-                    Architecting software-defined eco-friendly mobile networks, kernel-level interface steering, and zero-GPS proximity sensing ($P_i$) to optimize device energy and hardware longevity.
-                </p>
-            </p>
+    <main class="container">
 
-            <!-- Philosophical Banner -->
-            <div class="philosophy-banner">
-                <h4>Three Ideas. One Research Direction.</h4>
-                <p>Bridging sustainable systems via <b>01 / Proximity Index (<span class="math-symbol">P<sub>i</sub></span>) </b>, <b>02 / Networking</b>, and <b>03 / Memory</b> optimization — positioning our work right between macro-corporate syndicates and minimalist macro-zero goals.</p>
+        <!-- Profile Header -->
+
+        <section class="profile-card">
+
+            <div class="avatar">HR</div>
+
+            <h1>Humayun Rashid (হুমায়ূন রশীদ)</h1>
+
+            <div class="role-badge">
+                Independent Researcher &amp; Systems Architect
             </div>
 
+            <p class="discipline">
+                Sustainable Computing | Energy-Efficient Mobile Networks
+            </p>
+
+            <p class="bio">
+                Developing software-defined approaches to sustainable
+                mobile computing through zero-GPS proximity indexing,
+                energy-aware network-interface selection, and
+                memory-efficient architecture.
+            </p>
+
+            <!-- Signature Research -->
+
+            <section class="research-banner">
+
+                <h4>Signature Research</h4>
+
+                <p>
+                    Zero-GPS Proximity Indexing
+                    (<span class="math-symbol">P<sub>i</sub></span>)
+                    for Energy-Aware Mobile Network Selection.
+                </p>
+
+            </section>
+
+            <!-- Research Pillars -->
+
+            <section class="philosophy-banner">
+
+                <h4>Three Pillars. One Research Direction.</h4>
+
+                <p>
+                    Advancing sustainable mobile computing through
+                    <b>01 / Proximity Indexing</b>,
+                    <b>02 / Network-Interface Selection</b>, and
+                    <b>03 / Memory Optimization</b>.
+                </p>
+
+            </section>
+
             <!-- LinkedIn CTA -->
-            <a href="https://www.linkedin.com/in/HumayunRashidBD" class="btn-linkedin" target="_blank">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+
+            <a
+                href="https://www.linkedin.com/in/HumayunRashidBD"
+                class="btn-linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Connect with Humayun Rashid on LinkedIn"
+            >
+
+                <svg
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
                     <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.72a1.47 1.47 0 0 0-1.47 1.47 1.47 1.47 0 0 0 1.47 1.47 1.47 1.47 0 0 0 1.47-1.47 1.47 1.47 0 0 0-1.47-1.47Z"/>
                 </svg>
+
                 Connect on LinkedIn →
-            </a>
-        </div>
 
-        <!-- Portals Grid -->
-        <div class="grid-links">
-            <!-- Priority 01: Live Telemetry Engine -->
-            <a href="https://greennet.reachnbiz.com/telemetry/index.html" class="card-link" target="_blank">
+            </a>
+
+        </section>
+
+
+        <!-- Research & Professional Portals -->
+
+        <nav class="grid-links" aria-label="Research and professional links">
+
+            <!-- Priority 01: Live Telemetry -->
+
+            <a
+                href="https://greennet.reachnbiz.com/telemetry/index.html"
+                class="card-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
                 <div class="card-info">
+
                     <h3>Live Telemetry Portal</h3>
-                    <p>Real-Time Proximity Indexing (<span class="math-symbol">P<sub>i</sub></span>) & Dynamic Energy Audit Dashboard</p>
+
+                    <p>
+                        Proximity Indexing (P<sub>i</sub>) and
+                        Energy Audit Interface
+                    </p>
+
                 </div>
-                <span class="arrow">↗</span>
+
+                <span class="arrow" aria-hidden="true">↗</span>
+
             </a>
 
-            <!-- Priority 02: Primary Project Landing Hub -->
-            <a href="https://greennet.reachnbiz.com/" class="card-link" target="_blank">
+
+            <!-- Priority 02: GreenNet-Mobile -->
+
+            <a
+                href="https://greennet.reachnbiz.com/"
+                class="card-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
                 <div class="card-info">
+
                     <h3>GreenNet-Mobile Research Project</h3>
-                    <p>Primary Hub & System Overview for Eco-Friendly Interface Selection</p>
+
+                    <p>
+                        Research Hub: Eco-Friendly Interface Selection
+                        and Memory-Efficient Architecture
+                    </p>
+
                 </div>
-                <span class="arrow">↗</span>
+
+                <span class="arrow" aria-hidden="true">↗</span>
+
             </a>
 
-            <!-- Priority 03: Research, Code, Documentation, License, Publication Record -->
-            <a href="https://zenodo.org/records/23114734" class="card-link" target="_blank">
+
+            <!-- Priority 03: Zenodo -->
+
+            <a
+                href="https://zenodo.org/records/23114734"
+                class="card-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
                 <div class="card-info">
-                    <h3>Zenodo Preprint & Academic Records</h3>
-                    <p>Research Paper, Documentation, Source Archive, Licensing & Publication Record (DOI: 10.5281/zenodo.23114734)</p>
+
+                    <h3>Zenodo Research & Publication Records</h3>
+
+                    <p>
+                        Research Paper, Documentation, Source Archive,
+                        Licensing and Publication Record
+                        (DOI: 10.5281/zenodo.23114734)
+                    </p>
+
                 </div>
-                <span class="arrow">↗</span>
+
+                <span class="arrow" aria-hidden="true">↗</span>
+
             </a>
 
-        </div>
+        </nav>
 
-        <footer>
-            Copyright © 2026 <span class="tooltip-name" title="Research Fellow, Islamic University, Kushtia, Bangladesh">Humayun Rashid (হুমায়ূন রশীদ)</span> · GreenNet-Mobile Research Project
-        </footer>
-    </div>
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © <span id="current-year">2026</span>
+        Humayun Rashid (হুমায়ূন রশীদ)
+    </p>
+
+    <p class="footer-name">
+        Independent Researcher &amp; Systems Architect
+    </p>
+
+</footer>
+
+<!-- Automatic Copyright Year -->
+
+<script>
+    document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+</script>
+
+    </main>
 
 </body>
 </html>
