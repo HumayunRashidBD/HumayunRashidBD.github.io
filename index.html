@@ -1,17 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Humayun Rashid — Independent Researcher and Systems Architect exploring sustainable computing, energy-efficient mobile networks, and Zero-GPS Proximity Indexing (Pi) through GreenNet-Mobile.">
+    <meta
+        name="description"
+        content="Humayun Rashid — Independent Researcher and Systems Architect exploring sustainable computing, energy-efficient mobile networks, and the Zero-GPS Proximity Index (Pᵢ) through GreenNet-Mobile."
+    >
 
     <meta name="author" content="Humayun Rashid">
-
     <meta name="theme-color" content="#030712">
 
-    <title>Humayun Rashid (হুমায়ূন রশীদ) | Independent Researcher & Systems Architect</title>
+    <meta
+        property="og:title"
+        content="Humayun Rashid (হুমায়ূন রশীদ) | Independent Researcher & Systems Architect"
+    >
+
+    <meta
+        property="og:description"
+        content="Independent research in sustainable computing, energy-efficient mobile networks, and the Zero-GPS Proximity Index (Pᵢ)."
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:url"
+        content="https://humayunrashidbd.github.io/"
+    >
+
+    <meta name="twitter:card" content="summary">
+    
+    <title>
+        Humayun Rashid (হুমায়ূন রশীদ) |
+        Independent Researcher & Systems Architect
+    </title>
 
     <style>
         :root {
@@ -29,17 +52,30 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont,
-                "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "SF Pro Display",
+                "Segoe UI",
+                Roboto,
+                sans-serif;
+
             background-color: var(--bg);
             color: var(--text-primary);
+
             margin: 0;
             padding: 0;
             min-height: 100vh;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             background-image:
                 radial-gradient(
                     circle at 50% 0%,
@@ -51,6 +87,7 @@
                     rgba(2, 132, 199, 0.1),
                     transparent 50%
                 );
+
             background-attachment: fixed;
         }
 
@@ -64,63 +101,95 @@
 
         .profile-card {
             background: var(--card-bg);
+
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
+
             border: 1px solid var(--card-border);
             border-radius: 24px;
+
             padding: 2.5rem 2rem;
             text-align: center;
+
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+
             margin-bottom: 1.5rem;
         }
 
         .avatar {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #10b981, #0284c7);
+
+            background: linear-gradient(
+                135deg,
+                #10b981,
+                #0284c7
+            );
+
             border-radius: 50%;
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             font-size: 1.8rem;
             font-weight: bold;
             color: white;
+
             margin: 0 auto 1.5rem auto;
-            box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+
+            box-shadow:
+                0 0 25px rgba(16, 185, 129, 0.4);
         }
 
         h1 {
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: -0.02em;
+
             margin: 0 0 0.8rem 0;
+
             color: #ffffff;
         }
 
         .role-badge {
             display: inline-block;
+
             font-size: 0.85rem;
+
             color: var(--accent-green);
+
             background: rgba(16, 185, 129, 0.1);
+
             border: 1px solid rgba(16, 185, 129, 0.2);
+
             padding: 0.4rem 0.9rem;
+
             border-radius: 99px;
+
             margin-bottom: 1.2rem;
+
             font-weight: 600;
         }
 
         .discipline {
             font-size: 1.05rem;
+
             color: #e5e7eb;
+
             font-weight: 500;
             line-height: 1.5;
+
             margin: 0 0 1rem 0;
         }
 
         .bio {
             font-size: 0.98rem;
+
             color: var(--text-secondary);
+
             line-height: 1.7;
+
             margin: 0 0 1.5rem 0;
         }
 
@@ -128,26 +197,39 @@
 
         .research-banner {
             background: rgba(16, 185, 129, 0.05);
+
             border: 1px solid rgba(16, 185, 129, 0.2);
+
             border-radius: 16px;
+
             padding: 1.4rem 1.5rem;
+
             margin-bottom: 1.5rem;
+
             text-align: center;
         }
 
         .research-banner h4 {
             margin: 0 0 0.7rem 0;
+
             color: var(--accent-green);
+
             font-size: 0.9rem;
+
             text-transform: uppercase;
+
             letter-spacing: 0.08em;
         }
 
         .research-banner p {
             margin: 0;
+
             font-size: 1rem;
+
             color: var(--text-primary);
+
             line-height: 1.7;
+
             font-weight: 500;
         }
 
@@ -160,25 +242,37 @@
 
         .philosophy-banner {
             background: rgba(2, 132, 199, 0.05);
+
             border: 1px solid rgba(2, 132, 199, 0.2);
+
             border-radius: 16px;
+
             padding: 1.25rem 1.5rem;
+
             margin-bottom: 1.5rem;
+
             text-align: center;
         }
 
         .philosophy-banner h4 {
             margin: 0 0 0.6rem 0;
+
             color: var(--accent-blue);
+
             font-size: 0.9rem;
+
             text-transform: uppercase;
+
             letter-spacing: 0.06em;
         }
 
         .philosophy-banner p {
             margin: 0;
+
             font-size: 0.9rem;
+
             color: var(--text-secondary);
+
             line-height: 1.8;
         }
 
@@ -186,29 +280,45 @@
 
         .btn-linkedin {
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             gap: 0.75rem;
+
             width: 100%;
+
             background: var(--linkedin-blue);
+
             color: white;
+
             text-decoration: none;
+
             font-weight: 600;
             font-size: 1.05rem;
+
             padding: 1rem 0;
+
             border-radius: 14px;
+
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(10, 102, 194, 0.4);
+
+            box-shadow:
+                0 4px 20px rgba(10, 102, 194, 0.4);
+
             margin-top: 1rem;
         }
 
         .btn-linkedin:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(10, 102, 194, 0.6);
+
+            box-shadow:
+                0 8px 30px rgba(10, 102, 194, 0.6);
+
             background: #004182;
         }
 
-        /* Content Hub Grid */
+        /* Research & Professional Portals */
 
         .grid-links {
             display: flex;
@@ -218,42 +328,65 @@
 
         .card-link {
             background: var(--card-bg);
+
             border: 1px solid var(--card-border);
+
             border-radius: 16px;
+
             padding: 1.25rem 1.5rem;
+
             text-decoration: none;
+
             color: var(--text-primary);
+
             display: flex;
+
             justify-content: space-between;
             align-items: center;
+
             transition: all 0.25s ease;
+
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
 
         .card-link:hover {
             border-color: rgba(255, 255, 255, 0.3);
+
             transform: translateY(-2px);
+
             background: rgba(31, 41, 55, 0.8);
+        }
+
+        .card-link:focus-visible,
+        .btn-linkedin:focus-visible {
+            outline: 2px solid var(--accent-green);
+            outline-offset: 4px;
         }
 
         .card-info h3 {
             margin: 0 0 0.3rem 0;
+
             font-size: 1rem;
             font-weight: 600;
         }
 
         .card-info p {
             margin: 0;
+
             font-size: 0.85rem;
+
             color: var(--text-secondary);
+
             line-height: 1.5;
         }
 
         .arrow {
             color: var(--accent-green);
+
             font-weight: bold;
             font-size: 1.2rem;
+
             margin-left: 0.5rem;
         }
 
@@ -261,10 +394,18 @@
 
         footer {
             text-align: center;
+
             margin-top: 2rem;
+
             font-size: 0.8rem;
+
             color: #6b7280;
+
             line-height: 1.7;
+        }
+
+        footer p {
+            margin: 0.3rem 0;
         }
 
         .footer-name {
@@ -272,7 +413,10 @@
             font-weight: 500;
         }
 
+        /* Responsive Design */
+
         @media (max-width: 480px) {
+
             .container {
                 padding: 1.5rem 1rem;
             }
@@ -294,6 +438,26 @@
                 padding: 1.15rem 1rem;
             }
         }
+
+        /* Reduced Motion Accessibility */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            .card-link,
+            .btn-linkedin {
+                transition: none;
+            }
+
+            .card-link:hover,
+            .btn-linkedin:hover {
+                transform: none;
+            }
+        }
+
     </style>
 </head>
 
@@ -301,59 +465,89 @@
 
     <main class="container">
 
-        <!-- Profile Header -->
+        <!-- =====================================
+             PERSONAL PROFILE
+        ====================================== -->
 
-        <section class="profile-card">
+        <section
+            class="profile-card"
+            aria-labelledby="profile-name"
+        >
 
-            <div class="avatar">HR</div>
+            <div class="avatar" aria-hidden="true">
+                HR
+            </div>
 
-            <h1>Humayun Rashid (হুমায়ূন রশীদ)</h1>
+            <h1 id="profile-name">
+                Humayun Rashid (হুমায়ূন রশীদ)
+            </h1>
 
             <div class="role-badge">
                 Independent Researcher &amp; Systems Architect
             </div>
 
             <p class="discipline">
-                Sustainable Computing | Energy-Efficient Mobile Networks
+                Sustainable Computing |
+                Energy-Efficient Mobile Networks
             </p>
 
             <p class="bio">
-                Developing software-defined approaches to sustainable
-                mobile computing through zero-GPS proximity indexing,
-                energy-aware network-interface selection, and
-                memory-efficient architecture.
+                Exploring software-defined approaches to sustainable
+                mobile computing through RSSI-based, zero-GPS proximity
+                estimation, energy-aware network-interface selection,
+                and memory-efficient session architecture.
             </p>
 
-            <!-- Signature Research -->
+            <!-- =================================
+                 SIGNATURE RESEARCH
+            ================================== -->
 
-            <section class="research-banner">
+            <section
+                class="research-banner"
+                aria-labelledby="signature-research"
+            >
 
-                <h4>Signature Research</h4>
+                <h4 id="signature-research">
+                    Signature Research
+                </h4>
 
                 <p>
-                    Zero-GPS Proximity Indexing
+                    Zero-GPS Proximity Index
                     (<span class="math-symbol">P<sub>i</sub></span>)
                     for Energy-Aware Mobile Network Selection.
                 </p>
 
             </section>
 
-            <!-- Research Pillars -->
+            <!-- =================================
+                 RESEARCH PILLARS
+            ================================== -->
 
-            <section class="philosophy-banner">
+            <section
+                class="philosophy-banner"
+                aria-labelledby="research-pillars"
+            >
 
-                <h4>Three Pillars. One Research Direction.</h4>
+                <h4 id="research-pillars">
+                    Three Pillars. One Research Direction.
+                </h4>
 
                 <p>
-                    Advancing sustainable mobile computing through
-                    <b>01 / Proximity Indexing</b>,
-                    <b>02 / Network-Interface Selection</b>, and
-                    <b>03 / Memory Optimization</b>.
+                    Exploring sustainable mobile computing through
+
+                    <b>01 / Proximity Index (P<sub>i</sub>)</b>,
+
+                    <b>02 / Energy-Aware Network-Interface Selection</b>,
+                    and
+
+                    <b>03 / Memory-Efficient Session Architecture</b>.
                 </p>
 
             </section>
 
-            <!-- LinkedIn CTA -->
+            <!-- =================================
+                 LINKEDIN
+            ================================== -->
 
             <a
                 href="https://www.linkedin.com/in/HumayunRashidBD"
@@ -370,7 +564,9 @@
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                 >
+
                     <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.72a1.47 1.47 0 0 0-1.47 1.47 1.47 1.47 0 0 0 1.47 1.47 1.47 1.47 0 0 0 1.47-1.47 1.47 1.47 0 0 0-1.47-1.47Z"/>
+
                 </svg>
 
                 Connect on LinkedIn →
@@ -379,12 +575,16 @@
 
         </section>
 
+        <!-- =====================================
+             RESEARCH & PROFESSIONAL PORTALS
+        ====================================== -->
 
-        <!-- Research & Professional Portals -->
+        <nav
+            class="grid-links"
+            aria-label="Research and professional links"
+        >
 
-        <nav class="grid-links" aria-label="Research and professional links">
-
-            <!-- Priority 01: Live Telemetry -->
+            <!-- Priority 01: Telemetry Portal -->
 
             <a
                 href="https://greennet.reachnbiz.com/telemetry/index.html"
@@ -395,21 +595,24 @@
 
                 <div class="card-info">
 
-                    <h3>Live Telemetry Portal</h3>
+                    <h3>
+                        GreenNet-Mobile Telemetry Portal
+                    </h3>
 
                     <p>
-                        Proximity Indexing (P<sub>i</sub>) and
-                        Energy Audit Interface
+                        Proximity Index (P<sub>i</sub>) Telemetry
+                        and Energy-Audit Interface
                     </p>
 
                 </div>
 
-                <span class="arrow" aria-hidden="true">↗</span>
+                <span class="arrow" aria-hidden="true">
+                    ↗
+                </span>
 
             </a>
 
-
-            <!-- Priority 02: GreenNet-Mobile -->
+            <!-- Priority 02: Primary Research Project -->
 
             <a
                 href="https://greennet.reachnbiz.com/"
@@ -420,21 +623,25 @@
 
                 <div class="card-info">
 
-                    <h3>GreenNet-Mobile Research Project</h3>
+                    <h3>
+                        GreenNet-Mobile Research Project
+                    </h3>
 
                     <p>
-                        Research Hub: Eco-Friendly Interface Selection
+                        An Eco-Friendly Interface Selection
                         and Memory-Efficient Architecture
+                        for Reducing Mobile Energy Consumption
                     </p>
 
                 </div>
 
-                <span class="arrow" aria-hidden="true">↗</span>
+                <span class="arrow" aria-hidden="true">
+                    ↗
+                </span>
 
             </a>
 
-
-            <!-- Priority 03: Zenodo -->
+            <!-- Priority 03: Zenodo Publication -->
 
             <a
                 href="https://zenodo.org/records/23114734"
@@ -445,43 +652,52 @@
 
                 <div class="card-info">
 
-                    <h3>Zenodo Research & Publication Records</h3>
+                    <h3>
+                        Zenodo Research &amp; Publication Record
+                    </h3>
 
                     <p>
                         Research Paper, Documentation, Source Archive,
-                        Licensing and Publication Record
-                        (DOI: 10.5281/zenodo.23114734)
+                        Licensing and Publication Record.
+
+                        DOI: 10.5281/zenodo.23114734
                     </p>
 
                 </div>
 
-                <span class="arrow" aria-hidden="true">↗</span>
+                <span class="arrow" aria-hidden="true">
+                    ↗
+                </span>
 
             </a>
 
         </nav>
 
-<!-- Footer -->
+        <!-- =====================================
+             PERSONAL COPYRIGHT FOOTER
+        ====================================== -->
 
-<footer>
+        <footer>
 
-    <p>
-        © <span id="current-year">2026</span>
-        Humayun Rashid (হুমায়ূন রশীদ)
-    </p>
+            <p>
+                © <span id="current-year">2026</span>
+                Humayun Rashid (হুমায়ূন রশীদ)
+            </p>
 
-    <p class="footer-name">
-        Independent Researcher &amp; Systems Architect
-    </p>
+            <p class="footer-name">
+                Independent Researcher &amp; Systems Architect
+            </p>
 
-</footer>
+        </footer>
 
-<!-- Automatic Copyright Year -->
+        <!-- =====================================
+             AUTOMATIC COPYRIGHT YEAR
+        ====================================== -->
 
-<script>
-    document.getElementById("current-year").textContent =
-        new Date().getFullYear();
-</script>
+        <script>
+            document.getElementById("current-year").textContent =
+                new Date().getFullYear();
+        </script>
 
     </main>
 
